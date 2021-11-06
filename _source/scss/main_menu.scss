@@ -10,6 +10,9 @@
     &:not(:last-child) {
         margin: 0 20px 0 0;
     }
+    @media (max-width: 1280px) {
+        padding: 15px 0;
+    }
 }
 .main-menu__item {
     &:not(:last-child) {
@@ -22,6 +25,9 @@
     @include font-style-mix(24px, 600, 1, $color-text-violet-menu);
     text-transform: uppercase;
     cursor: pointer;
+    @media (max-width: 1280px) {
+        font-size: 18px;
+    }
 }
 
 .main-menu__link:after {
