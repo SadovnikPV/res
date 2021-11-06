@@ -1,5 +1,4 @@
 body {
-    overflow: hidden;
     min-height: 100%;
     width: 100%;
     background-color: $color-body-bg;
@@ -9,4 +8,5 @@ body {
     max-width: 1370px;
     margin: 0 auto;
     padding: 0 10px;
+    overflow: hidden;
 }

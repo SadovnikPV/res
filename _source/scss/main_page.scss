@@ -1,0 +1,70 @@
+.main-page {
+}
+.main-page__container {
+    padding: 0 0 30px 0;
+}
+._container {
+}
+.main-page__resume {
+}
+.resume {
+}
+.resume__preview {
+    font-family: 'Montserrat', sans-serif;
+    @include font-style-mix(18px, 400, 1.333, $color-violet-hard);
+    padding: 20px;
+}
+.resume__title {
+    font-family: 'Montserrat', sans-serif;
+    @include font-style-mix(36px, 700, 1, $color-violet-hard);
+    margin: 20px 0 40px 0;
+    text-align: center;
+
+}
+.resume__resume-section {
+}
+.resume-section {
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(to right, $color-violet-extralight, $color-violet-hard, $color-violet-extralight);
+    border-image-slice: 1;
+    margin: 40px 0 0 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resume-section__title {
+    font-family: 'Montserrat', sans-serif;
+    @include font-style-mix(20px, 600, 1, $color-violet-medium);
+    background-color: $color-body-bg;
+    border: 2px solid $color-violet-hard;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    margin: -28px 0 20px 0;
+    max-width: 300px;
+    z-index: 5;
+}
+.resume-section__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+.resume-section__item {
+    font-family: 'Montserrat', sans-serif;
+    @include font-style-mix(18px, 400, 1.333, $color-violet-hard);
+    &:not(:last-child) {
+        margin: 0 0 15px 0;
+    }
+}
+.resume-section__item-field {
+    font-family: 'Montserrat', sans-serif;
+    @include font-style-mix(18px, 600, 1.333, $color-violet-hard);
+    margin: 0 10px 0 0;
+}
