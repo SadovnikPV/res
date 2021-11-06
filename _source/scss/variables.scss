@@ -1,0 +1,25 @@
+// ----------------------- Основные цвета сайта --------------------------
+
+// 5 оттенков фиолетового, от светлого к темному:
+$color-violet-extralight: #864AA4;
+$color-violet-light: #7B29A4;
+$color-violet-medium: #31004A;
+$color-violet-hard: #290E37;
+$color-violet-extrahard: #200030;
+
+// 5 оттенков болотно-зеленого, от светлого к темному:
+$color-green-extralight: #B6B752;
+$color-green-light: #B5B72E;
+$color-green-medium: #6D6F00;
+$color-green-hard: #525315;
+$color-green-extrahard: #474800;
+
+
+// ------------------------- Цвета текста ---------------------------
+$color-text-green-header: $color-green-light;
+$color-text-violet-menu: $color-violet-medium;
+
+// ----------------------- Остальные цвета --------------------------
+$color-body-bg: $color-green-extralight;
+$color-header-bg: $color-violet-medium;
+$color-main-menu-bg: $color-green-medium;

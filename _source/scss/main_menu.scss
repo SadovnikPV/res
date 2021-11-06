@@ -1,0 +1,39 @@
+.main-menu {
+    background-color: $color-main-menu-bg;
+}
+.main-menu__container {
+}
+.main-menu__items {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    &:not(:last-child) {
+        margin: 0 20px 0 0;
+    }
+}
+.main-menu__item {
+    &:not(:last-child) {
+        margin: 0 40px 0 0;
+    }
+}
+.main-menu__link {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    @include font-style-mix(24px, 600, 1, $color-text-violet-menu);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.main-menu__link:after {
+    background-color: $color-violet-hard;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    transition: width .3s ease-in-out;
+}
+.main-menu__link:hover:after,
+.main-menu__link:focus:after {
+    width: 100%;
+}
+

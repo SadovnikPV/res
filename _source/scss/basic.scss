@@ -1,0 +1,12 @@
+body {
+    overflow: hidden;
+    min-height: 100%;
+    width: 100%;
+    background-color: $color-body-bg;
+}
+
+._container {
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 10px;
+}

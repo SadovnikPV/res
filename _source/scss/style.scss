@@ -1,0 +1,12 @@
+// ---------------------------- Подключение миксинов -------------------------------
+
+@import "mixins/_font-style-mix.scss";
+
+// ------------------ Подключение остальных файлов стилей SCSS ---------------------
+
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "basic";
+@import "header";
+@import "main_menu";
