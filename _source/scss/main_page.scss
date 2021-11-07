@@ -14,12 +14,19 @@
     @include font-style-mix(16px, 400, 1.333, $color-violet-hard);
     padding: 20px;
 }
+.resume__title-container {
+    text-align: center;
+}
 .resume__title {
     font-family: 'Montserrat', sans-serif;
     @include font-style-mix(36px, 700, 1, $color-violet-hard);
-    margin: 20px 0 40px 0;
+    margin: 20px 0 30px 0;
+    padding: 0 0 5px 0;
     text-align: center;
-
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, $color-violet-extralight, $color-violet-hard, $color-violet-extralight);
+    border-image-slice: 1;
 }
 .resume__resume-section {
 }
@@ -75,14 +82,19 @@
 }
 .resume-section__column {
     &:first-child {
-        flex: 0 1 35%;
-        min-width: 200px;
+        //flex: 0 1 25%;
         max-width: 200px;
+        min-width: 200px;
         padding: 0 20px 0 0;
-        margin: 0 20px 0 0;
         text-align: center;
     }
     flex: 1 1 auto;
+    @media (max-width: 1024px) {
+        &:first-child {
+            max-width: 160px;
+            min-width: 160px;
+        }
+    }
 }
 .resume-section__date {
     font-family: 'Montserrat', sans-serif;
@@ -99,8 +111,33 @@
 .resume-section__project-img {
     float: right;
     clear: left;
-    margin: 0 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     max-width: 300px;
     max-height: 300px;
     border-radius: 5px;
+    border: 1px solid $color-violet-light;
+}
+
+.resume-section__about-me {
+    text-indent: 35px;
+    line-height: 1.5;
+}
+
+.resume-section__img_float-right {
+    float: right;
+    clear: left;
+    margin: 20px 10px 10px 10px;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 5px;
+    border: 1px solid $color-violet-light;
+}
+.resume-section__img_float-left {
+    float: left;
+    clear: right;
+    margin: 20px 10px 10px 10px;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 5px;
+    border: 1px solid $color-violet-light;
 }

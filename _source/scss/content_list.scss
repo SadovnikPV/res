@@ -1,0 +1,37 @@
+// --------------------------- Стили блока "СОДЕРЖАНИЕ" --------------------------
+
+.content-list {
+    text-align: center;
+}
+.content-list__title-link {
+    font-family: 'Montserrat', sans-serif;
+    @include font-style-mix(18px, 600, 1.33, $color-violet-medium);
+    display: block;
+    margin: 0 0 15px 0;
+}
+.content-list__container {
+    display: flex;
+    flex-direction: row;
+    //justify-content: space-between;
+    justify-content: center;
+    background-color: $color-green-light;
+    padding: 10px 0;
+}
+.content-list__list {
+    padding: 0 10px;
+}
+.content-list__item {
+    &:not(:last-child) {
+        margin: 0 0 10px 0;
+    }
+}
+.content-list__link {
+    font-family: 'Montserrat', sans-serif;
+    @include font-style-mix(18px, 600, 1.33, $color-violet-medium);
+}
+.content-list__decor-img_1 {
+    margin: 10px 80px 0 80px;
+    width: 100px;
+    height: auto;
+    max-height: 100px;
+}

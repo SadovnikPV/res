@@ -1,0 +1,43 @@
+// ---------------------------- Стили формы обратной связи -------------------------
+
+.guestbook {
+    font-family: 'Montserrat', sans-serif;
+    @include font-style-mix(14px, 400, 1.5, $color-violet-hard);
+    padding: 10px;
+}
+.guestbook__form {
+    &:not(:last-child) {
+        text-align: center;
+    }
+}
+.guestbook__input {
+    font-family: 'Montserrat', sans-serif;
+    @include font-style-mix(14px, 400, 1.5, $color-violet-hard);
+    padding: 4px 7px 2px 7px;
+    height: 30px;
+    width: 250px;
+    &:not(:last-child) {
+        margin: 0 0 10px 10px;
+    }
+}
+.guestbook__textarea {
+    font-family: 'Montserrat', sans-serif;
+    @include font-style-mix(14px, 400, 1.5, $color-violet-hard);
+    margin: 10px 0 0 0;
+    width: 96%;
+    height: 120px;
+    padding: 7px 5px 2px 7px;
+    resize: none;
+}
+.guestbook__submit {
+    font-family: 'Montserrat', sans-serif;
+    @include font-style-mix(14px, 600, 1.5, $color-violet-hard);    
+    width: 170px;
+    height: 35px;
+    padding: 4px 0 2px 0;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+.guestbook__submit-wrap {
+    text-align: center;
+}
