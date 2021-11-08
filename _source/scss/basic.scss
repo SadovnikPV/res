@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     min-height: 100%;
     width: 100%;
@@ -9,4 +12,19 @@ body {
     margin: 0 auto;
     padding: 0 10px;
     overflow: hidden;
+}
+._scrollup {
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display: none;
+    text-indent: -9999px;
+    background: url("/img/icons/icon_top.png") no-repeat;
+    @media (max-width: 576px) {
+        bottom: 5px;
+        right: 5px;
+    }
 }

@@ -61,29 +61,31 @@
 					</div>
 
 					<div class="resume__content-list content-list">
-						<a href="" class="content-list__title-link">Содержание</a>	
-						<div class="content-list__container">
-							<!-- <img class="content-list__decor-img_1" src="/img/content-list/resume_content_list_tree_01.png" alt="декоративное изображение"> -->
-							<ul class="content-list__list">
-								<li class="content-list__item">
-									<a href="" class="content-list__link">Работа в школе</a>
-								</li>
-								<li class="content-list__item">
-									<a href="" class="content-list__link">Служба в армии</a>
-								</li>
-								<li class="content-list__item">
-									<a href="" class="content-list__link">Интересы и увлечения</a>
-								</li>
-								<li class="content-list__item">
-									<a href="" class="content-list__link">Цели</a>
-								</li>
-							</ul>
-							<!-- <img class="content-list__decor-img_1" src="/img/content-list/resume_content_list_tree_04.png" alt="декоративное изображение"> -->
-						</div>
+						<details class="content-list__details">
+							<summary class="content-list__title-link">Содержание</summary>
+							<div class="content-list__container">
+								<!-- <img class="content-list__decor-img_1" src="/img/content-list/resume_content_list_tree_01.png" alt="декоративное изображение"> -->
+								<ul class="content-list__list">
+									<li class="content-list__item">
+										<a href="#about-me-school" class="content-list__link">Работа в школе</a>
+									</li>
+									<li class="content-list__item">
+										<a href="#about-me-army" class="content-list__link">Служба в армии</a>
+									</li>
+									<li class="content-list__item">
+										<a href="#about-me-hobby" class="content-list__link">Интересы и увлечения</a>
+									</li>
+									<li class="content-list__item">
+										<a href="#about-me-target" class="content-list__link">Цели</a>
+									</li>
+								</ul>
+								<!-- <img class="content-list__decor-img_1" src="/img/content-list/resume_content_list_tree_04.png" alt="декоративное изображение"> -->
+							</div>
+						</details>
 					</div>
 
 					<div class="resume__resume-section resume-section">
-						<div class="resume-section__title">Работа в школе</div>
+						<div id="about-me-school" class="resume-section__title">Работа в школе</div>
 
 						<div class="resume-section__content resume-section__content_work-exp">
 							<div class="resume-section__column">
@@ -120,12 +122,11 @@
 							</div>
 						</div>	
 					</div>
-
+					
 					<div class="resume-section__separator"></div>
 
 					<div class="resume__resume-section resume-section">
-						<div class="resume-section__title">Служба в армии</div>
-
+						<div id="about-me-army" class="resume-section__title">Служба в армии</div>
 						<div class="resume-section__content resume-section__content_work-exp">
 							<div class="resume-section__column">
 								<div class="resume-section__date"></div>
@@ -154,7 +155,7 @@
 					<div class="resume-section__separator"></div>
 
 					<div class="resume__resume-section resume-section">
-						<div class="resume-section__title">Интересы и увлечения</div>
+						<div id="about-me-hobby" class="resume-section__title">Интересы и увлечения</div>
 
 						<div class="resume-section__content resume-section__content_work-exp">
 							<div class="resume-section__column">
@@ -189,7 +190,7 @@
 					<div class="resume-section__separator"></div>
 
 					<div class="resume__resume-section resume-section">
-						<div class="resume-section__title">Цели</div>
+						<div id="about-me-target" class="resume-section__title">Цели</div>
 
 						<div class="resume-section__content resume-section__content_work-exp">
 							<div class="resume-section__column">
@@ -267,6 +268,9 @@
 			</div>
 		</footer>
 
+		<a href="#" class="_scrollup">Наверх</a>
+
+		<script src="js/jquery.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 

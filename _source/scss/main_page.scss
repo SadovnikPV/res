@@ -40,6 +40,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &:last-child {
+        margin: 40px 30px 30px 30px;
+    }
+    @media (max-width: 768px) {
+        margin: 40px 10px 60px 10px;
+        &:last-child {
+            margin: 40px 10px 30px 10px;
+        }
+    }
 }
 .resume-section__title {
     font-family: 'Montserrat', sans-serif;
@@ -65,10 +74,13 @@
 }
 .resume-section__item {
     font-family: 'Montserrat', sans-serif;
-    @include font-style-mix(14px, 400, 1.333, $color-violet-hard);
+    @include font-style-mix(14px, 400, 1.5, $color-violet-hard);
     &:not(:last-child) {
         margin: 0 0 10px 0;
     }
+}
+.resume-section__item_break-all {
+    word-break: break-all;
 }
 .resume-section__item-field {
     font-family: 'Montserrat', sans-serif;
@@ -79,10 +91,12 @@
 .resume-section__content_work-exp {
     display: flex;
     flex-direction: row;
+    @media (max-width: 576px) {
+        flex-direction: column;
+    }
 }
 .resume-section__column {
     &:first-child {
-        //flex: 0 1 25%;
         max-width: 200px;
         min-width: 200px;
         padding: 0 20px 0 0;
@@ -95,14 +109,48 @@
             min-width: 160px;
         }
     }
+    @media (max-width: 768px) {
+        &:first-child {
+            max-width: 130px;
+            min-width: 130px;
+        }
+    }
+    @media (max-width: 576px) {
+        &:first-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-width: 100%;
+            padding: 0;
+        }
+    }
 }
 .resume-section__date {
     font-family: 'Montserrat', sans-serif;
     @include font-style-mix(16px, 600, 1.333, $color-violet-hard);
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+    @media (max-width: 576px) {
+            display: none;
+    }
+}
+.resume-section__date_lowdef {
+    display: none;
+    @media (max-width: 576px) {
+        display: block;
+    }
 }
 .resume-section__date-img {
     margin: 10px 0 10px 0;
     max-width: 90px;
+}
+
+.resume-section__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    @include font-style-mix(16px, 600, 1.333, $color-violet-hard);
 }
 .resume-section__separator {
     margin: 20px 0;
@@ -116,6 +164,14 @@
     max-height: 300px;
     border-radius: 5px;
     border: 1px solid $color-violet-light;
+    @media (max-width: 1024px) {
+        float: none;
+        margin: 0 0 10px 0;
+    }
+    @media (max-width: 768px) {
+        max-width: 250px;
+        max-height: 250px;
+    }
 }
 
 .resume-section__about-me {
@@ -131,6 +187,15 @@
     max-height: 300px;
     border-radius: 5px;
     border: 1px solid $color-violet-light;
+    @media (max-width: 768px) {
+        float: none;
+        display: block;
+        margin: 0 10px 0 10px;
+    }
+    @media (max-width: 480px) {
+        max-width: 250px;
+        max-height: 250px;
+    }
 }
 .resume-section__img_float-left {
     float: left;
@@ -140,4 +205,9 @@
     max-height: 300px;
     border-radius: 5px;
     border: 1px solid $color-violet-light;
+    @media (max-width: 768px) {
+        float: none;
+        display: block;
+        margin: 10px 10px 10px 10px;
+    }
 }

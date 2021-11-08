@@ -60,8 +60,35 @@
 						<div class="resume__title">Резюме</div>
 					</div>
 
+					<div class="resume__content-list content-list">
+						<details class="content-list__details">
+							<summary class="content-list__title-link">Содержание</summary>
+							<div class="content-list__container">
+								<!-- <img class="content-list__decor-img_1" src="/img/content-list/resume_content_list_tree_01.png" alt="декоративное изображение"> -->
+								<ul class="content-list__list">
+									<li class="content-list__item">
+										<a href="#resume-main-info" class="content-list__link">Общая информация</a>
+									</li>
+									<li class="content-list__item">
+										<a href="#resume-work-exp" class="content-list__link">Опыт работы</a>
+									</li>
+									<li class="content-list__item">
+										<a href="#resume-competency" class="content-list__link">Компетенции</a>
+									</li>
+									<li class="content-list__item">
+										<a href="#resume-education" class="content-list__link">Высшее образование</a>
+									</li>
+									<li class="content-list__item">
+										<a href="#resume-language" class="content-list__link">Знание языков</a>
+									</li>
+								</ul>
+								<!-- <img class="content-list__decor-img_1" src="/img/content-list/resume_content_list_tree_04.png" alt="декоративное изображение"> -->
+							</div>
+						</details>
+					</div>
+
 					<div class="resume__resume-section resume-section">
-						<div class="resume-section__title">Общая информация</div>
+						<div id="resume-main-info" class="resume-section__title">Общая информация</div>
 						<div class="resume-section__content">
 							<div class="resume-section__item">
 								<span class="resume-section__item-field">Пол:</span>
@@ -87,11 +114,12 @@
 					</div>
 
 					<div class="resume__resume-section resume-section">
-						<div class="resume-section__title">Опыт работы</div>
+						<div id="resume-work-exp" class="resume-section__title">Опыт работы</div>
 						<div class="resume-section__content resume-section__content_work-exp">
 							<div class="resume-section__column">
 								<div class="resume-section__date">Январь 2021</div>
 								<div class="resume-section__date">Ноябрь 2021</div>
+								<div class="resume-section__date resume-section__date_lowdef">Январь 2021 - Ноябрь 2021</div>
 								<img class="resume-section__date-img" src="/img/main/main_section_data_img_1.png" alt="декоративное озображение под датой">
 							</div>
 							<div class="resume-section__column">
@@ -119,6 +147,7 @@
 							<div class="resume-section__column">
 								<div class="resume-section__date">Ноябрь 2014</div>
 								<div class="resume-section__date">Декабрь 2020</div>
+								<div class="resume-section__date resume-section__date_lowdef">Ноябрь 2014 - Декабрь 2020</div>
 								<img class="resume-section__date-img" src="/img/main/main_section_data_img_1.png" alt="декоративное озображение под датой">
 							</div>
 							<div class="resume-section__column">
@@ -152,6 +181,7 @@
 							<div class="resume-section__column">
 								<div class="resume-section__date">Декабрь 2012</div>
 								<div class="resume-section__date">Декабрь 2013</div>
+								<div class="resume-section__date resume-section__date_lowdef">Декабрь 2012 - Декабрь 2013</div>
 								<img class="resume-section__date-img" src="/img/main/main_section_data_img_1.png" alt="декоративное озображение под датой">
 							</div>
 							<div class="resume-section__column">
@@ -178,6 +208,7 @@
 							<div class="resume-section__column">
 								<div class="resume-section__date">Сентябрь 2012</div>
 								<div class="resume-section__date">Декабрь 2012</div>
+								<div class="resume-section__date resume-section__date_lowdef">Сентябрь 2012 - Декабрь 2012</div>
 								<img class="resume-section__date-img" src="/img/main/main_section_data_img_1.png" alt="декоративное озображение под датой">
 							</div>
 							<div class="resume-section__column">
@@ -205,11 +236,11 @@
 
 
 					<div class="resume__resume-section resume-section">
-						<div class="resume-section__title">Обо мне</div>
+						<div id="resume-competency" class="resume-section__title">Компетенции</div>
 
 						<div class="resume-section__content resume-section__content_work-exp">
 							<div class="resume-section__column">
-								<div class="resume-section__date">Верстка</div>
+								<div class="resume-section__subtitle">Верстка</div>
 								<!-- <img class="resume-section__date-img" src="/img/main/main_section_data_img_1.png" alt="декоративное озображение под датой"> -->
 							</div>
 							<div class="resume-section__column">
@@ -217,9 +248,9 @@
 									<span class="resume-section__item-field"></span>
 									Хорошее знание HTML5 и CSS3. Умение верстать точно по макету (figma, photoshop). 
 									Адаптивная (adaptive), отзывчивая (responsive) верстка. Pixel Perfect.
-									Семантическая верстка. Понимание и умение верстать по методологии БЭМ.
+									Семантическая верстка. Доступность. Понимание и умение верстать по методологии БЭМ.
 									Дополнение страниц интерактивными элементами с помощью js (слайдеры, карусели, модальные окна и т.п.).
-									Использование в работе SASS (SCSS).
+									Использование SASS (SCSS).
 								</div>
 							</div>
 						</div>
@@ -228,7 +259,7 @@
 
 						<div class="resume-section__content resume-section__content_work-exp">
 							<div class="resume-section__column">
-								<div class="resume-section__date">JavaScript</div>
+								<div class="resume-section__subtitle">JavaScript</div>
 								<!-- <img class="resume-section__date-img" src="/img/main/main_section_data_img_1.png" alt="декоративное озображение под датой"> -->
 							</div>
 							<div class="resume-section__column">
@@ -245,7 +276,7 @@
 
 						<div class="resume-section__content resume-section__content_work-exp">
 							<div class="resume-section__column">
-								<div class="resume-section__date">BackEnd</div>
+								<div class="resume-section__subtitle">BackEnd</div>
 								<!-- <img class="resume-section__date-img" src="/img/main/main_section_data_img_1.png" alt="декоративное озображение под датой"> -->
 							</div>
 							<div class="resume-section__column">
@@ -262,7 +293,7 @@
 
 						<div class="resume-section__content resume-section__content_work-exp">
 							<div class="resume-section__column">
-								<div class="resume-section__date">Прочее</div>
+								<div class="resume-section__subtitle">Прочее</div>
 								<!-- <img class="resume-section__date-img" src="/img/main/main_section_data_img_1.png" alt="декоративное озображение под датой"> -->
 							</div>
 							<div class="resume-section__column">
@@ -271,7 +302,7 @@
 									- Работа со сборщиком GULP. Умение писать под него задачи. А следовательно есть, правда, не очень
 								глубокое, понимание работы с node.js.<br>
 								- Понимание и умение работать с Git, GitHub. В том числе через консоль.<br>
-								- Хорошее знание алгоритмов и структур данных, в том числе использующихся в олимпиадном программировании.<br>
+								- Хорошее знание алгоритмов и структур данных, в том числе использующихся в олимпиадном программировании. Вычислительная сложность алгоритмов.<br>
 								- Знание ООП и уметь писать код в данном стиле.<br>
 								- Понимание основных паттернов проектирования ПО.<br>
 								- Знание и понимание работы протоколов передачи данных.<br>
@@ -289,14 +320,14 @@
 
 						<div class="resume-section__content">
 							<div class="resume-section__item">
-								Люблю постоянно учиться и разбираться в чем-то новом. Всё схватываю на лету.
-								Большое желание развиваться в сфере программирования и IT.
+								А еще я люблю постоянно учиться и разбираться в чем-то новом. Всё схватываю на лету.
+								И имею огромное желание развиваться в сфере программирования и IT.
 							</div>
 						</div>
 					</div>
 
 					<div class="resume__resume-section resume-section">
-						<div class="resume-section__title">Высшее образование</div>
+						<div id="resume-education" class="resume-section__title">Высшее образование</div>
 						<div class="resume-section__content">
 							<div class="resume-section__item">
 								<span class="resume-section__item-field">Университет:</span>
@@ -318,7 +349,7 @@
 					</div>
 
 					<div class="resume__resume-section resume-section">
-						<div class="resume-section__title">Знание языков</div>
+						<div id="resume-language" class="resume-section__title">Знание языков</div>
 						<div class="resume-section__content">
 							<div class="resume-section__item">
 								<span class="resume-section__item-field">Русский:</span>
@@ -378,6 +409,9 @@
 			</div>
 		</footer>
 
+		<a href="#" class="_scrollup">Наверх</a>
+
+		<script src="js/jquery.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 
