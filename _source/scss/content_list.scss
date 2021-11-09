@@ -53,7 +53,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: $color-green-light;
+    background-color: $color-green-extralight;
     padding: 10px 0;
 }
 .content-list__list {
@@ -61,12 +61,12 @@
 }
 .content-list__item {
     &:not(:last-child) {
-        margin: 0 0 10px 0;
+        margin: 0 0 7px 0;
     }
 }
 .content-list__link {
     font-family: 'Montserrat', sans-serif;
-    @include font-style-mix(18px, 600, 1.33, $color-violet-medium);
+    @include font-style-mix(16px, 600, 1.33, $color-violet-medium);
     display: inline-block;
     &:after {
         background-color: $color-violet-hard;

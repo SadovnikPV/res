@@ -9,10 +9,17 @@
 }
 .resume {
 }
+.resume__preview-title-img-wrapper {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+.resume__preview-title-img {
+    max-width: 200px;
+}
 .resume__preview {
     font-family: 'Montserrat', sans-serif;
-    @include font-style-mix(16px, 400, 1.333, $color-violet-hard);
-    padding: 20px;
+    @include font-style-mix(14px, 500, 1.333, $color-violet-hard);
+    padding: 10px 40px 20px 40px;
 }
 .resume__title-container {
     text-align: center;
