@@ -1,72 +1,8 @@
-<!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.css">
-		<title>Резюме</title>
-	</head>
-
-	<body>
-
-		<header class="header">
-			<div class="header__container _container">
-				<div class="header__content">
-					<div class="header__text-content">
-						<h1 class="header__title">Резюме</h1>
-						<h3 class="header__subtitle">Web разработчик. Junior</h3>
-						<div class="header__text">Здравствуйте! Меня зовут Павел Садофьев. 
-							На этом сайте вы можете познакомиться с моими работами, 
-							моим резюме и моей жизнью)
-						</div>
-						<img class="header__decor-img-2" src="img/header/header_branch_img_2.png" alt="декоративное изображение">
-					</div>
-					<div class="header__img-content">
-						<img class="header__main-img" src="img/header/header_me_img.png" alt="моя фотография">
-					</div>
-				</div>
-				<img class="header__decor-img-1" src="img/header/header_branch_img_1.png" alt="декоративное изображение">
-			</div>
-		</header>
-
-		<nav class="main-menu">
-			<div class="main-menu__container _container">
-				<ul class="main-menu__items">
-					<li class="main-menu__item">
-						<a href="" class="main-menu__link">Главная</a>
-					</li>
-					<li class="main-menu__item">
-						<a href="" class="main-menu__link">Портфолио</a>
-					</li>
-					<li class="main-menu__item">
-						<a href="" class="main-menu__link">Обо мне</a>
-					</li>
-					<li class="main-menu__item">
-						<a href="" class="main-menu__link">Помочь проекту</a>
-					</li>
-				</ul>
-				<div class="main-menu__container_lowdef">
-					<div class="main-menu__link-wrap_lowdef">
-						<img class="main-menu__link-img_lowdef" src="img/icons/menu_button_burger_01.svg" alt="главное меню">
-						<span class="main-menu__link_lowdef">Меню</span>
-					</div>
-					<ul class="main-menu__list_lowdef">
-						<li class="main-menu__item">
-							<a href="" class="main-menu__link">Главная</a>
-						</li>
-						<li class="main-menu__item">
-							<a href="" class="main-menu__link">Портфолио</a>
-						</li>
-						<li class="main-menu__item">
-							<a href="" class="main-menu__link">Обо мне</a>
-						</li>
-						<li class="main-menu__item">
-							<a href="" class="main-menu__link">Помочь проекту</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+<?php 
+	include "includes/begin-html.php";
+	include "includes/header.php";
+	include "includes/main-menu.php";
+?>
 
 		<main class="main-page">
 			<div class="main-page__container _container">
@@ -76,7 +12,10 @@
 					</div>
 					<div class="resume__preview">На этой странице вы можете ознакомиться с моим резюме. Всё формально и строго. Почти ;) 
 						Чтобы посмотреть мои работы или узнать побольше обо мне, вы можете перейти на страницу
-						портфолио или обо мне, соответственно.
+						<a class="resume__preview-link" href="<?= get_url("portfolio.php") ?>">портфолио</a>	
+						или 
+						<a class="resume__preview-link" href="<?= get_url("about-me.php") ?>">обо мне</a>	
+						, соответственно.
 					</div>
 
 					<div class="resume__title-container">
@@ -328,7 +267,7 @@
 							<div class="resume-section__column">
 								<div class="resume-section__item">
 									<span class="resume-section__item-field"></span>
-									- Работа со сборщиком GULP. Умение писать под него задачи. А следовательно есть, правда, не очень
+									- Работа со сборщиком GULP. Умение писать под него задачи. А следовательно есть, правда, пока не очень
 								глубокое, понимание работы с node.js.<br>
 								- Понимание и умение работать с Git, GitHub. В том числе через консоль.<br>
 								- Хорошее знание алгоритмов и структур данных, в том числе использующихся в олимпиадном программировании. Вычислительная сложность алгоритмов.<br>
@@ -350,7 +289,7 @@
 						<div class="resume-section__content">
 							<div class="resume-section__item">
 								А еще я люблю постоянно учиться и разбираться в чем-то новом. Всё схватываю на лету.
-								И имею огромное желание развиваться в сфере программирования и IT.
+								И имею огромное желание развиваться в сфере программирования и IT!
 							</div>
 						</div>
 					</div>
@@ -395,53 +334,5 @@
 			</div>
 		</main>
 
-		<footer class="footer">
-			<div class="footer__container _container">
-				<div class="footer__content">
-					<div class="footer__logo">
-						<h2 class="footer__logo-text">Резюме</h2>
-					</div>
-					<div class="footer__map">
-						<ul class="footer__map-list">
-							<li class="footer__map-title">
-								Карта сайта
-							</li>
-							<li class="footer__map-item">
-								<a href="" class="footer__map-link">Главная</a>
-							</li>
-							<li class="footer__map-item">
-								<a href="" class="footer__map-link">Портфолио</a>
-							</li>
-							<li class="footer__map-item">
-								<a href="" class="footer__map-link">Обо мне</a>
-							</li>
-							<li class="footer__map-item">
-								<a href="" class="footer__map-link">Помочь проекту</a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer__contacts">
-						<ul class="footer__contacts-list">
-							<li class="footer__contacts-title">
-								Контакты
-							</li>
-							<li class="footer__contacts-item">
-								Телефон: <a href="" class="footer__contacts-link">8-925-055-71-31</a>
-							</li>
-							<li class="footer__contacts-item">
-								E-mail: <a href="" class="footer__contacts-link">sadofev_pv@mail.ru</a>
-							</li>
-						</ul>
-					</div>
-					<img class="footer__decor-img-1" src="img/footer/footer_branch_img_1.png" alt="декоративное изображение">
-				</div>
-			</div>
-		</footer>
-
-		<a href="#" class="_scrollup">Наверх</a>
-
-		<script src="js/jquery.min.js"></script>
-		<script src="js/script.js"></script>
-	</body>
-
-</html>
+<?php 
+	include "includes/footer.php";

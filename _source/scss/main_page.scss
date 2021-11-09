@@ -21,6 +21,14 @@
     @include font-style-mix(14px, 500, 1.333, $color-violet-hard);
     padding: 10px 40px 20px 40px;
 }
+.resume__preview-link {
+    text-decoration: underline;
+    color: $color-violet-light;
+    &:hover,
+    &:focus {
+        color: $color-green-medium;
+    }
+}
 .resume__title-container {
     text-align: center;
 }
@@ -178,6 +186,17 @@
     @media (max-width: 768px) {
         max-width: 250px;
         max-height: 250px;
+    }
+}
+
+.resume-section__project-link {
+    
+    color: #60163E;
+    text-decoration: underline;
+    font-weight: 500;
+    &:hover,
+    &:focus {
+        color: $color-violet-light;
     }
 }
 

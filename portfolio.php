@@ -1,61 +1,24 @@
-<!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.css">
-		<title>Резюме</title>
-	</head>
+<?php 
+	include "includes/begin-html.php";
+	include "includes/header.php";
+	include "includes/main-menu.php";
+?>
 
-	<body>
 
-		<header class="header">
-			<div class="header__container _container">
-				<div class="header__content">
-					<div class="header__text-content">
-						<h1 class="header__title">Резюме</h1>
-						<h3 class="header__subtitle">Web разработчик. Junior</h3>
-						<div class="header__text">Здравствуйте! Меня зовут Павел Садофьев. 
-							На этом сайте вы можете познакомиться с моими работами, 
-							моим резюме и моей жизнью)
-						</div>
-						<img class="header__decor-img-2" src="img/header/header_branch_img_2.png" alt="декоративное изображение">
-					</div>
-					<div class="header__img-content">
-						<img class="header__main-img" src="img/header/header_me_img.png" alt="моя фотография">
-					</div>
-				</div>
-				<img class="header__decor-img-1" src="img/header/header_branch_img_1.png" alt="декоративное изображение">
-			</div>
-		</header>
-
-		<nav class="main-menu">
-			<div class="main-menu__container _container">
-				<ul class="main-menu__items">
-					<li class="main-menu__item">
-						<a href="" class="main-menu__link">Главная</a>
-					</li>
-					<li class="main-menu__item">
-						<a href="" class="main-menu__link">Портфолио</a>
-					</li>
-					<li class="main-menu__item">
-						<a href="" class="main-menu__link">Обо мне</a>
-					</li>
-					<li class="main-menu__item">
-						<a href="" class="main-menu__link">Помочь проекту</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
 
 		<main class="main-page">
 			<div class="main-page__container _container">
 				<div class="main-page__resume resume">
+					<div class="resume__preview-title-img-wrapper">
+						<img src="img/main/resume_main_title_branch_img.png" alt="декоративное изображение" class="resume__preview-title-img">
+					</div>
 					<div class="resume__preview">На этой странице вы можете посмотреть мои работы.
 						Для вашего удобства, проекты поделены на разные категории, хотя это разделение довольно условное,
 						потому что в каждой работе присутствуют и элементы верстки, и чистый JS, а где-то и 
 						back-end составляющая. Приятного просмотра!<br> 
-						И не забудьте оставить свои пожелания на странице помочь проекту!
+						И не забудьте оставить свои пожелания на странице 
+						<a class="resume__preview-link" href="<?= get_url("help-project.php") ?>">помочь проекту</a>
+						!
 					</div>
 
 					<div class="resume__title-container">
@@ -100,16 +63,18 @@
 							<div class="resume-section__column">
 								<img class="resume-section__project-img" src="img/portfolio/portfolio_design_logo.jpg" alt="логотип или скрин главной страницы проекта">
 								<div class="resume-section__item">
-									<span class="resume-section__item-field">Ссылка:</span>
-									Самозанятый
+									<span class="resume-section__item-field">Ссылка на проект:</span>
+									<a class="resume-section__project-link" target="_blank" href="<?= get_url("projects/portfolio-grey-design/index.html") ?>">Открыть работу</a>
 								</div>
 								<div class="resume-section__item resume-section__item_break-all">
 									<span class="resume-section__item-field">Ссылка на GitHub:</span>
-									Самозанятый
+									<a class="resume-section__project-link" target="_blank" href="<?= get_url("projects/portfolio-grey-design/index.html") ?>">Посмотреть исходники</a>
+
 								</div>
 								<div class="resume-section__item">
-									<span class="resume-section__item-field">Скачать макет:</span>
-									Самозанятый
+									<span class="resume-section__item-field">Открыть макет, как изображение:</span>
+									<a class="resume-section__project-link" target="_blank" href="<?= get_url("projects/portfolio-grey-design/index.html") ?>">Макет</a>
+
 								</div>
 								<div class="resume-section__item">
 									<span class="resume-section__item-field">Сервисы, языки и технологии, используемые при разработке:</span>
@@ -289,53 +254,5 @@
 			</div>
 		</main>
 
-		<footer class="footer">
-			<div class="footer__container _container">
-				<div class="footer__content">
-					<div class="footer__logo">
-						<h2 class="footer__logo-text">Резюме</h2>
-					</div>
-					<div class="footer__map">
-						<ul class="footer__map-list">
-							<li class="footer__map-title">
-								Карта сайта
-							</li>
-							<li class="footer__map-item">
-								<a href="" class="footer__map-link">Главная</a>
-							</li>
-							<li class="footer__map-item">
-								<a href="" class="footer__map-link">Портфолио</a>
-							</li>
-							<li class="footer__map-item">
-								<a href="" class="footer__map-link">Обо мне</a>
-							</li>
-							<li class="footer__map-item">
-								<a href="" class="footer__map-link">Помочь проекту</a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer__contacts">
-						<ul class="footer__contacts-list">
-							<li class="footer__contacts-title">
-								Контакты
-							</li>
-							<li class="footer__contacts-item">
-								Телефон: <a href="" class="footer__contacts-link">8-925-055-71-31</a>
-							</li>
-							<li class="footer__contacts-item">
-								E-mail: <a href="" class="footer__contacts-link">sadofev_pv@mail.ru</a>
-							</li>
-						</ul>
-					</div>
-					<img class="footer__decor-img-1" src="img/footer/footer_branch_img_1.png" alt="декоративное изображение">
-				</div>
-			</div>
-		</footer>
-
-		<a href="#" class="_scrollup">Наверх</a>
-
-		<script src="js/jquery.min.js"></script>
-		<script src="js/script.js"></script>
-	</body>
-
-</html>
+<?php 
+	include "includes/footer.php";

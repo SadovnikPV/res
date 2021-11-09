@@ -1,56 +1,15 @@
-<!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.css">
-		<title>Резюме</title>
-	</head>
-
-	<body>
-
-		<header class="header">
-			<div class="header__container _container">
-				<div class="header__content">
-					<div class="header__text-content">
-						<h1 class="header__title">Резюме</h1>
-						<h3 class="header__subtitle">Web разработчик. Junior</h3>
-						<div class="header__text">Здравствуйте! Меня зовут Павел Садофьев. 
-							На этом сайте вы можете познакомиться с моими работами, 
-							моим резюме и моей жизнью)
-						</div>
-						<img class="header__decor-img-2" src="img/header/header_branch_img_2.png" alt="декоративное изображение">
-					</div>
-					<div class="header__img-content">
-						<img class="header__main-img" src="img/header/header_me_img.png" alt="моя фотография">
-					</div>
-				</div>
-				<img class="header__decor-img-1" src="img/header/header_branch_img_1.png" alt="декоративное изображение">
-			</div>
-		</header>
-
-		<nav class="main-menu">
-			<div class="main-menu__container _container">
-				<ul class="main-menu__items">
-					<li class="main-menu__item">
-						<a href="" class="main-menu__link">Главная</a>
-					</li>
-					<li class="main-menu__item">
-						<a href="" class="main-menu__link">Портфолио</a>
-					</li>
-					<li class="main-menu__item">
-						<a href="" class="main-menu__link">Обо мне</a>
-					</li>
-					<li class="main-menu__item">
-						<a href="" class="main-menu__link">Помочь проекту</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+<?php 
+	include "includes/begin-html.php";
+	include "includes/header.php";
+	include "includes/main-menu.php";
+?>
 
 		<main class="main-page">
 			<div class="main-page__container _container">
 				<div class="main-page__resume resume">
+					<div class="resume__preview-title-img-wrapper">
+						<img src="img/main/resume_main_title_branch_img.png" alt="декоративное изображение" class="resume__preview-title-img">
+					</div>
 					<div class="resume__preview">Здесь вы можете немного больше узнать обо мне, не как о
 						соискателе должности джуниора, а как об обычном парне. Который, всё-таки не забывайте, 
 						является соискателем на должность джуниора)
@@ -231,53 +190,5 @@
 			</div>
 		</main>
 
-		<footer class="footer">
-			<div class="footer__container _container">
-				<div class="footer__content">
-					<div class="footer__logo">
-						<h2 class="footer__logo-text">Резюме</h2>
-					</div>
-					<div class="footer__map">
-						<ul class="footer__map-list">
-							<li class="footer__map-title">
-								Карта сайта
-							</li>
-							<li class="footer__map-item">
-								<a href="" class="footer__map-link">Главная</a>
-							</li>
-							<li class="footer__map-item">
-								<a href="" class="footer__map-link">Портфолио</a>
-							</li>
-							<li class="footer__map-item">
-								<a href="" class="footer__map-link">Обо мне</a>
-							</li>
-							<li class="footer__map-item">
-								<a href="" class="footer__map-link">Помочь проекту</a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer__contacts">
-						<ul class="footer__contacts-list">
-							<li class="footer__contacts-title">
-								Контакты
-							</li>
-							<li class="footer__contacts-item">
-								Телефон: <a href="" class="footer__contacts-link">8-925-055-71-31</a>
-							</li>
-							<li class="footer__contacts-item">
-								E-mail: <a href="" class="footer__contacts-link">sadofev_pv@mail.ru</a>
-							</li>
-						</ul>
-					</div>
-					<img class="footer__decor-img-1" src="img/footer/footer_branch_img_1.png" alt="декоративное изображение">
-				</div>
-			</div>
-		</footer>
-
-		<a href="#" class="_scrollup">Наверх</a>
-
-		<script src="js/jquery.min.js"></script>
-		<script src="js/script.js"></script>
-	</body>
-
-</html>
+<?php 
+	include "includes/footer.php";

@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 30px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     &:not(:last-child) {
         margin: 0 30px 0 0;
     }
@@ -35,10 +35,10 @@
 }
 .footer__logo-text {
     font-family: 'Montserrat', sans-serif;
-    @include font-style-mix(48px, 700, 1.333, $color-green-light);
+    @include font-style-mix(32px, 700, 1.333, $color-green-light);
     text-transform: uppercase;
     @media (max-width: 1024px) {
-        font-size: 36px;
+        font-size: 28px;
     }
 }
 .footer__map {
@@ -59,14 +59,18 @@
 }
 .footer__map-title {
     font-family: 'Montserrat', sans-serif;
-    @include font-style-mix(18px, 600, 1.333, $color-green-light);
+    @include font-style-mix(14px, 600, 1.333, $color-green-light);
 }
 .footer__map-item {
     margin: 5px 0 0 0;
 }
 .footer__map-link {
     font-family: 'Montserrat', sans-serif;
-    @include font-style-mix(18px, 400, 1.333, $color-green-light);
+    @include font-style-mix(14px, 400, 1.333, $color-green-light);
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
 }
 .footer__contacts {
     order: 3;
@@ -84,21 +88,27 @@
 }
 .footer__contacts-title {
     font-family: 'Montserrat', sans-serif;
-    @include font-style-mix(18px, 600, 1.333, $color-green-light);
+    @include font-style-mix(14px, 600, 1.333, $color-green-light);
 }
 .footer__contacts-item {
     font-family: 'Montserrat', sans-serif;
-    @include font-style-mix(18px, 400, 1.333, $color-green-light);
+    @include font-style-mix(14px, 400, 1.333, $color-green-light);
     margin: 5px 0 0 0;
+    
 }
 .footer__contacts-link {
     font-family: 'Montserrat', sans-serif;
-    @include font-style-mix(18px, 400, 1.333, $color-green-light);
+    @include font-style-mix(14px, 400, 1.333, $color-green-light);
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
 }
 
 .footer__decor-img-1 {
-    max-width: 100px;
-    margin: 0 0 -20px 0;
+    max-width: 80px;
+    max-height: 130px;
+    margin: 0 20px -20px 0;
     order: 4;
     @media (max-width: 1024px) {
         max-width: 60px;
