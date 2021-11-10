@@ -22,7 +22,7 @@
         </ul>
         <div class="main-menu__container_lowdef">
             <button type="button" class="main-menu__link-wrap_lowdef">
-                <img class="main-menu__link-img_lowdef" src="img/icons/menu_button_burger_01.svg" alt="главное меню">
+                <img class="main-menu__link-img_lowdef" src="<?= get_url('img/icons/menu_button_burger_01.svg') ?>" alt="главное меню">
                 <span class="main-menu__link_lowdef">Меню</span>
             </button>
             <div class="main-menu__list-wrap_lowdef">

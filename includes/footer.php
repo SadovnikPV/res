@@ -43,15 +43,15 @@
 							</li>
 						</ul>
 					</div>
-					<img class="footer__decor-img-1" src="img/footer/footer_branch_img_1.png" alt="декоративное изображение">
+					<img class="footer__decor-img-1" src="<?= get_url('img/footer/footer_branch_img_1.png') ?>" alt="декоративное изображение">
 				</div>
 			</div>
 		</footer>
-
+</div>
 		<a href="#" class="_scrollup">Наверх</a>
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/script.js"></script>
+		<script src="<?= get_url('js/jquery.min.js') ?>"></script>
+		<script src="<?= get_url('js/script.js') ?>"></script>
 	</body>
 
 </html>

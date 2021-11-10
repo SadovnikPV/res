@@ -38,7 +38,7 @@
 										По всем остальным вопросам, вы можете обратиться ко мне через контакты, указанные в основном резюме.
 									</p>
 									<div class="resume-section__guestbook guestbook">
-										<form class="guestbook__form" name="guestbook_form" method="POST" action="">
+										<form class="guestbook__form" name="guestbook_form" method="POST" action="<?= get_url('includes/guestbook-response.php') ?>">
 											Имя (необязательно): <input class = "guestbook__input" type="text" name="name" placeholder="Имя"> <br>
 											Название компании (необязательно): <input class = "guestbook__input" type="text" name="company" placeholder="Название компании"> <br>
 											Отзывы и советы (обязательно): <br>

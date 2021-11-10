@@ -5,7 +5,7 @@
 
 // ---------------------------- Общие переменные ---------------------------
 
-    define ('SITE_NAME', 'Резюме. Садофьев П.В.');            // Имя сайта
+    define ('SITE_NAME', 'Резюме. Садофьев П.В.');             // Имя сайта
     define ('HOST', 'http://' . 'res/');                       // Домен сайта с протоколом http
 
 
@@ -13,7 +13,11 @@
 // ---------------------------- Переменные БД ---------------------------
 
     define ('DB_HOST', 'localhost');            // Адрес хоста (IP или имя)
-    define ('DB_NAME', 'miniurl');              // Имя БД
-    define ('DB_USER', 'root');
-    define ('DB_PASS', '');
+    define ('DB_NAME', 'resume');               // Имя БД
+    define ('DB_USER', 'root');                 // Имя пользователя
+    define ('DB_PASS', '');                     // Пароль
+
+    define ('DB_RESUME_GUESTBOOK', '');                     
+
+
 
