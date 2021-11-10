@@ -29,7 +29,6 @@
 						<details class="content-list__details">
 							<summary class="content-list__title-link">Содержание</summary>
 							<div class="content-list__container">
-								<!-- <img class="content-list__decor-img_1" src="/img/content-list/resume_content_list_tree_01.png" alt="декоративное изображение"> -->
 								<ul class="content-list__list">
 									<li class="content-list__item">
 										<img class="resume-section__date-img" src="/img/main/main_section_data_img_1.png" alt="декоративное озображение под датой">
@@ -47,7 +46,6 @@
 										<img class="resume-section__date-img" src="/img/main/main_section_data_img_1.png" alt="декоративное озображение под датой">
 									</li>
 								</ul>
-								<!-- <img class="content-list__decor-img_1" src="/img/content-list/resume_content_list_tree_04.png" alt="декоративное изображение"> -->
 							</div>
 						</details>
 					</div>
@@ -68,17 +66,17 @@
 								</div>
 								<div class="resume-section__item resume-section__item_break-all">
 									<span class="resume-section__item-field">Ссылка на GitHub:</span>
-									<a class="resume-section__project-link" target="_blank" href="<?= get_url("projects/portfolio-grey-design/index.html") ?>">Посмотреть исходники</a>
+									<a class="resume-section__project-link" target="_blank" href="https://github.com/SadovnikPV/portfolio-grey-design">Посмотреть исходники</a>
 
 								</div>
 								<div class="resume-section__item">
 									<span class="resume-section__item-field">Открыть макет, как изображение:</span>
-									<a class="resume-section__project-link" target="_blank" href="<?= get_url("projects/portfolio-grey-design/index.html") ?>">Макет</a>
+									<a class="resume-section__project-link" target="_blank" href="<?= get_url("projects/portfolio-grey-design/portfolio-grey-design-img.jpg") ?>">Макет</a>
 
 								</div>
 								<div class="resume-section__item">
 									<span class="resume-section__item-field">Сервисы, языки и технологии, используемые при разработке:</span>
-									HTML5, CCS3, SASS (SCSS), JavaScript, GULP 4
+									HTML5, CCS3, SASS (SCSS), JavaScript
 								</div>
 								<div class="resume-section__item">
 									<span class="resume-section__item-field">Описание проекта: </span>
@@ -101,20 +99,21 @@
 							<div class="resume-section__column">
 								<img class="resume-section__project-img" src="img/portfolio/relvise_design_logo.png" alt="логотип или скрин главной страницы проекта">
 								<div class="resume-section__item">
-									<span class="resume-section__item-field">Ссылка:</span>
-									Самозанятый
+									<span class="resume-section__item-field">Ссылка на проект:</span>
+									<a class="resume-section__project-link" target="_blank" href="<?= get_url("projects/relvise-design/index.html") ?>">Открыть работу</a>
 								</div>
 								<div class="resume-section__item resume-section__item_break-all">
 									<span class="resume-section__item-field">Ссылка на GitHub:</span>
-									Самозанятый
+									<a class="resume-section__project-link" target="_blank" href="https://github.com/SadovnikPV/relvise-design">Посмотреть исходники</a>
 								</div>
 								<div class="resume-section__item">
-									<span class="resume-section__item-field">Скачать макет:</span>
-									Самозанятый
+									<span class="resume-section__item-field">Открыть макет, как изображение:</span>
+									<a class="resume-section__project-link" target="_blank" href="<?= get_url("projects/relvise-design/relvise-design-img.jpg") ?>">Макет</a>
+
 								</div>
 								<div class="resume-section__item">
 									<span class="resume-section__item-field">Сервисы, языки и технологии, используемые при разработке:</span>
-									HTML5, CCS3, SASS (SCSS), GULP 4
+									HTML5, CCS3, SASS (SCSS)
 								</div>
 								<div class="resume-section__item">
 									<span class="resume-section__item-field">Описание проекта: </span>
@@ -140,12 +139,12 @@
 							<div class="resume-section__column">
 								<img class="resume-section__project-img" src="img/portfolio/ussrtank_logo.jpg" alt="логотип или скрин главной страницы проекта">
 								<div class="resume-section__item">
-									<span class="resume-section__item-field">Ссылка:</span>
-									Самозанятый
+									<span class="resume-section__item-field">Ссылка на проект:</span>
+									<a class="resume-section__project-link" target="_blank" href="<?= get_url("projects/ussrtank/index.php") ?>">Открыть работу</a>
 								</div>
 								<div class="resume-section__item resume-section__item_break-all">
 									<span class="resume-section__item-field">Ссылка на GitHub:</span>
-									https://github.com/SadovnikPV/USSRTank
+									<a class="resume-section__project-link" target="_blank" href="https://github.com/SadovnikPV/USSRTank">Посмотреть исходники</a>
 								</div>
 								<div class="resume-section__item">
 									<span class="resume-section__item-field">Сервисы, языки и технологии, используемые при разработке:</span>
@@ -166,8 +165,9 @@
 									<span class="resume-section__item-field">Комментарии разработчика: </span>
 									Помимо самой игры в проекте реализован редактор карт, предназначенный, правда, только для разработчика. 
 									Поэтому дружелюбным интерфейсом для простого пользователя он похвастаться не может. 
-									Ознакомиться с ним можно по ссылке: конструктор уровней.
-									Игра написана в основном на JS (jquery) в стиле ООП.
+									Ознакомиться с ним можно по ссылке: 
+									<a class="resume-section__project-link" target="_blank" href="<?= get_url("projects/ussrtank/level_constructor.php") ?>">конструктор уровней</a>.
+									Игра написана в основном на JS (jQuery) в стиле ООП.
 								</div>
 							</div>
 						</div>
@@ -182,16 +182,16 @@
 							<div class="resume-section__column">
 								<img class="resume-section__project-img" src="img/portfolio/monkey_money_logo.jpg" alt="логотип или скрин главной страницы проекта">
 								<div class="resume-section__item">
-									<span class="resume-section__item-field">Ссылка:</span>
-									Самозанятый
+									<span class="resume-section__item-field">Ссылка на проект:</span>
+									<a class="resume-section__project-link" target="_blank" href="<?= get_url("projects/monkey-money/index.html") ?>">Открыть работу</a>
 								</div>
 								<div class="resume-section__item resume-section__item_break-all">
 									<span class="resume-section__item-field">Ссылка на GitHub:</span>
-									Самозанятый
+									<a class="resume-section__project-link" target="_blank" href="https://github.com/SadovnikPV/monkey-money">Посмотреть исходники</a>
 								</div>
 								<div class="resume-section__item">
 									<span class="resume-section__item-field">Сервисы, языки и технологии, используемые при разработке:</span>
-									HTML5, CCS3, SASS (SCSS), JavaScript, CreateJS, GULP 4
+									HTML5, CCS3, SASS (SCSS), JavaScript, CreateJS
 								</div>
 								<div class="resume-section__item">
 									<span class="resume-section__item-field">Описание проекта: </span>
@@ -222,12 +222,12 @@
 							<div class="resume-section__column">
 								<img class="resume-section__project-img" src="img/portfolio/mini_url_logo.jpg" alt="логотип или скрин главной страницы проекта">
 								<div class="resume-section__item">
-									<span class="resume-section__item-field">Ссылка:</span>
-									Самозанятый
+									<span class="resume-section__item-field">Ссылка на проект:</span>
+									<a class="resume-section__project-link" target="_blank" href="<?= get_url("projects/miniurl/index.php") ?>">Открыть работу</a>
 								</div>
 								<div class="resume-section__item resume-section__item_break-all">
 									<span class="resume-section__item-field">Ссылка на GitHub:</span>
-									https://github.com/SadovnikPV/USSRTank
+									<a class="resume-section__project-link" target="_blank" href="https://github.com/SadovnikPV/miniurl">Посмотреть исходники</a>
 								</div>
 								<div class="resume-section__item">
 									<span class="resume-section__item-field">Сервисы, языки и технологии, используемые при разработке:</span>
@@ -243,6 +243,8 @@
 								<div class="resume-section__item">
 									<span class="resume-section__item-field">Комментарии разработчика: </span>
 									Серверная часть состоит из БД с двумя связанными таблицами, и несложного скрипта авторизации.
+									Поскольку проект является лишь примером, он размещен на домене с именем sadofev.ru, да еще и в подкаталоге.
+									Поэтому ссылки получаются не такие короткие как хотелось бы)
 									Проект, как и предыдущий, еще дорабатывается, как в плане дизайна, так и в плане функционала.
 								</div>
 							</div>
